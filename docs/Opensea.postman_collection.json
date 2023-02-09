@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "097f4e4e-7943-4ef3-b045-635536269271",
+		"name": "Opensea",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ByID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/movie/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"movie",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/D:/htdocs/juzgado/juzgado-web/protected/storage/adjuntos/7330/1556973977_Profile.pdf"
+						},
+						{
+							"key": "description",
+							"value": "This is a MOVIE",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "10.00",
+							"type": "text"
+						},
+						{
+							"key": "co_creators",
+							"value": "[3,4,5]",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/movie",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"movie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/movies/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"movies",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/movie/buy/17",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"movie",
+						"buy",
+						"17"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
